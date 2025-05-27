@@ -1,28 +1,55 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Header from './header/Header';
 import SideBar from './sideBar/SideBar';
-import DashBoard from './DashBoard/dashpoardSubComponents/DashboardOverview/DashboardOverview';
 import DashboardMainContent from './DashBoard/DashboardMainContent';
-import CalendarView from './DashBoard/dashpoardSubComponents/CalendarView/CalendarView';
 
 function MainPage() {
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center p-4">
-      <div className="w-full max-w-6xl bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden">
-       
-        <Header />
-       <div className="flex w-full flex-col lg:flex-row">
-        <SideBar/>
+    <motion.div
+      className="min-h-screen bg-gray-100 flex justify-center p-4"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.div
+        className="w-full max-w-6xl bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden"
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+      >
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.4 }}
+        >
+          <Header />
+        </motion.div>
 
-        <DashboardMainContent/>
-      
-        
-        
-      </div>
-       
-      
-      </div>
-    </div>
+        <motion.div
+          className="flex w-full flex-col lg:flex-row"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+        >
+          <motion.div
+            initial={{ x: -30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <SideBar />
+          </motion.div>
+
+          <motion.div
+            initial={{ x: 30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <DashboardMainContent />
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }
 
