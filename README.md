@@ -7,7 +7,6 @@ A responsive, pixel-perfect healthcare dashboard built using **React.js** and **
 ## 🔗 Live Demo
 
 🌐 [View Deployed Project on Vercel](https://fit-peo-assignment-beige.vercel.app/)  
-> Replace the above link with your actual deployed URL.
 
 ---
 
