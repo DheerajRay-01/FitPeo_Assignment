@@ -3,7 +3,7 @@ import { Plus, Bell  } from "lucide-react";
 
 function Header() {
   return (
-    <div className="w-full shadow-sm px-4 py-2  m-auto ">
+    <div className="w-full shadow-sm px-4 py-2  m-auto mt-3">
      
    
 

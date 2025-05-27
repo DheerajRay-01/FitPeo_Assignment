@@ -40,10 +40,10 @@ function MainPage() {
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
           aria-label="Toggle Sidebar"
-          className="text-gray-600 hover:text-gray-900 focus:outline-none flex items-center gap-2 fixed top-5 right-10"
+          className="text-gray-600 hover:text-gray-900 focus:outline-none flex items-center gap-2 fixed top-7 right-10"
         >
-          <Bell size={22} />
-          <Menu size={26} />
+          <Bell size={25} />
+          <Menu size={28} />
         </button>
       </div>
 
