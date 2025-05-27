@@ -15,14 +15,8 @@ function Calender({calendarData}) {
   return Math.random() < 0.5;
 }
 
-  const monthNames = [
-   "January","February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-];
-
-
   return (
-    <div className="shadow-md w-screen sm:w-fit rounded-2xl">
+    <div className="shadow-md w-full sm:w-fit rounded-2xl">
 
    <div className="flex justify-between items-center px-4 py-1 mt-2 bg-blue-100 rounded-t-2xl rounded-b-sm mb-1">
   <span className="text-lg font-semibold text-gray-800">May 2025</span>
@@ -33,7 +27,7 @@ function Calender({calendarData}) {
 </div>
 
     
-    <div className="p-2 flex gap-2 justify-around bg-blue-100 rounded-b-2xl  rounded-t-sm">
+    <div className="p-2 flex gap-2 justify-around bg-blue-100 rounded-b-2xl  rounded-t-sm overflow-x-scroll">
       {calendarData.map((day, index) => (
         <div
           key={index}

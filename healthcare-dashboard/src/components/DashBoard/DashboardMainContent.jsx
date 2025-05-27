@@ -10,7 +10,7 @@ import ActivityFeed from './dashpoardSubComponents/ActivityFeed/ActivityFeed'
 
 function DashboardMainContent() {
   return (
-    <div className='flex w-full flex-col lg:flex-row p-2 gap-4 '>
+    <div className='flex w-full flex-col lg:flex-row p-2 gap-4'>
        <div className="flex w-full flex-col h-fit gap-2"> 
         <DashboardOverview HealthStatusCardsData={HealthStatusCardsData}/>
         <ActivityFeed/>

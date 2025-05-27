@@ -3,7 +3,7 @@ import { Plus, Bell } from "lucide-react";
 
 function Header() {
   return (
-    <div className="w-full shadow-sm px-4 py-2 ">
+    <div className="w-full shadow-sm px-4 py-2  m-auto">
       <nav className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0">
         {/* Top row on mobile: Logo + Notification + Profile */}
         <div className="flex items-center justify-between">
