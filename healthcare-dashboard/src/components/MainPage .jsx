@@ -8,11 +8,10 @@ import { Menu, Bell } from 'lucide-react';
 function MainPage() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // Handle auto-close sidebar on resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
-        setSidebarOpen(false); // Optional: hide mobile sidebar on desktop
+        setSidebarOpen(false); 
       }
     };
     window.addEventListener('resize', handleResize);
@@ -31,16 +30,17 @@ function MainPage() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
         className="w-full flex items-center justify-center"
+        id='top'
       >
         <Header />
       </motion.div>
 
       {/* Mobile menu button */}
-      <div className="lg:hidden flex justify-end px-4 py-2">
+      <div className="lg:hidden flex justify-end px-2 py-2 ">
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
           aria-label="Toggle Sidebar"
-          className="text-gray-600 hover:text-gray-900 focus:outline-none flex items-center gap-2 fixed top-5 right-5"
+          className="text-gray-600 hover:text-gray-900 focus:outline-none flex items-center gap-2 fixed top-5 right-10"
         >
           <Bell size={22} />
           <Menu size={26} />
@@ -48,19 +48,18 @@ function MainPage() {
       </div>
 
       <motion.div
-        className="flex flex-col lg:flex-row"
+        className="flex flex-col lg:flex-row "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
-        {/* Sidebar - mobile toggle, always visible on lg+ */}
         {(sidebarOpen || window.innerWidth >= 1024) && (
           <motion.div
             initial={{ x: 30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
             className={`w-full lg:w-auto z-10 lg:z-auto ${
-              sidebarOpen ? 'block' : 'hidden lg:block'
+              sidebarOpen ? 'block absolute' : 'hidden lg:block'
             }`}
           >
             <SideBar />

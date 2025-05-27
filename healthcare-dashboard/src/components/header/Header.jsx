@@ -1,11 +1,14 @@
 import React from "react";
-import { Plus, Bell } from "lucide-react";
+import { Plus, Bell  } from "lucide-react";
 
 function Header() {
   return (
-    <div className="w-full shadow-sm px-4 py-2  m-auto">
+    <div className="w-full shadow-sm px-4 py-2  m-auto ">
+     
+   
+
       <nav className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0">
-        {/* Top row on mobile: Logo + Notification + Profile */}
+       
         <div className="flex items-center justify-between">
 
            {/* Profile image */}
@@ -18,17 +21,11 @@ function Header() {
               </div>
             </div>
           {/* Logo */}
-          <div className="text-3xl sm:text-2xl font-bold text-blue-600  m-auto sm:px-15">HealthCare</div>
+          <div className="text-3xl sm:text-2xl font-bold text-blue-600 m-auto px-15 ">HealthCare</div>
 
-          {/* Notification + Profile */}
-          <div className="flex items-center gap-4">
-       
-
-           
-          </div>
         </div>
 
-        {/* Bottom row on mobile: Search + Add button */}
+       
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
              
           {/* Search input */}

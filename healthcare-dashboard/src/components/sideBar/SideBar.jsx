@@ -24,8 +24,8 @@ function SideBar() {
   ];
 
   return (
-    <div className="p-3 w-fit">
-      <ul className="menu bg-base-200 rounded-box w-40">
+    <div className="p-2 w-fi">
+      <ul className="menu bg-base-200 rounded-box w-40  ">
         <li className="menu-title">General</li>
         {sidebarItemsGeneral.map((item, index) => {
           const Icon = item.icon;

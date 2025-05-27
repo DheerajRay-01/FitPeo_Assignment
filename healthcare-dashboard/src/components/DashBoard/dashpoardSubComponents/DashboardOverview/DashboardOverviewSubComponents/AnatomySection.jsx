@@ -1,5 +1,5 @@
 import React from 'react';
-import bodyImage from '../../../../../assets/image.png'; // Adjust path as needed
+import bodyImage from '../../../../../assets/image.png'; 
 
 function AnatomySection() {
   return (
