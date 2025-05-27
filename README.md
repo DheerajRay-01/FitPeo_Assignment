@@ -1,8 +1,3 @@
-Great! Since you’ve hosted the project on **Vercel**, I’ll update your `README.md` to include a **Live Demo** link section. Here’s the updated version:
-
----
-
-```markdown
 # 🏥 Healthcare Dashboard – Assignment for FitPeo Tech Pvt. Ltd.
 
 A responsive, pixel-perfect healthcare dashboard built using **React.js** and **Tailwind CSS**, focused on clean UI architecture and modular design. This assignment demonstrates front-end development skills through a component-driven layout and mock data rendering.
@@ -11,15 +6,14 @@ A responsive, pixel-perfect healthcare dashboard built using **React.js** and **
 
 ## 🔗 Live Demo
 
-🌐 [View Deployed Project on Vercel](https://fit-peo-assignment-beige.vercel.app/)  
-> Replace with your actual Vercel deployment link.
+🌐 [View Deployed Project on Vercel](https://your-vercel-app-url.vercel.app)  
+> Replace the above link with your actual deployed URL.
 
 ---
 
 ## 📁 Project Folder Structure
 
 ```
-
 healthcare-dashboard/
 ├── node\_modules/
 ├── public/
@@ -95,7 +89,7 @@ healthcare-dashboard/
    ```bash
    git clone https://github.com/DheerajRay-01/FitPe_assignment.git
    cd healthcare-dashboard
-````
+
 
 2. **Install dependencies**
 
@@ -111,29 +105,13 @@ healthcare-dashboard/
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots here to showcase UI elements and responsiveness.
-
----
-
 ## 👨‍💻 Author
 
-**Dheeraj Ray**
-[GitHub](https://github.com/DheerajRay-01)
+**Dheeraj Ray**  
+🔗 [GitHub](https://github.com/DheerajRay-01)  
+💼 [LinkedIn](https://www.linkedin.com/in/dheeraj-ray-628853291/)  
+🐦 [Twitter / X](https://x.com/DheerajRay2003)  
+📧 [Email](mailto:dheerajray2003@gmail.com)
 
----
 
-## 📃 License
 
-This project is intended for academic/assignment use only and not for commercial redistribution.
-
-```
-
----
-
-🔧 **Next Step:**  
-Just replace the placeholder link in the "Live Demo" section with your actual Vercel URL (e.g., `https://healthcare-dashboard.vercel.app`), and you're good to go!
-
-Let me know if you also want a small banner or badge for deployment (like Vercel or Netlify status).
-```
