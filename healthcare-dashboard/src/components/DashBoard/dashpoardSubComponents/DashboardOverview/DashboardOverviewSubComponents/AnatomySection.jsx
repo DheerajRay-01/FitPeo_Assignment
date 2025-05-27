@@ -7,7 +7,7 @@ function AnatomySection() {
       <img
         src={bodyImage}
         alt="body"
-        className="w-full max-w-lg object-contain"
+        className="w-full max-w-lg object-contain my-10"
         style={{ transform: 'scale(1.5)', transition: 'transform 0.3s ease' }}
       />
     </div>
