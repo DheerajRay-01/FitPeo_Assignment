@@ -10,7 +10,7 @@ function MainPage() {
 
   return (
     <motion.div
-      className="min-h-screen bg-gray-100 flex justify-center p-4"
+      className="min-h-screen w-screen bg-gray-100 flex justify-center p-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
