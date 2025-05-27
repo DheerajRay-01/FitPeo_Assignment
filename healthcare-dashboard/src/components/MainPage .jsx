@@ -21,7 +21,7 @@ function MainPage() {
 
   return (
     <motion.div
-      className="w-fit overflow-hidden md:overflow-hidden lg:overflow-auto  min-h-screen rounded-none lg:rounded-2xl  shadow-md border border-gray-200"
+      className="w-full overflow-hidden md:overflow-hidden lg:overflow-auto  min-h-screen rounded-none lg:rounded-2xl  shadow-md border border-gray-200"
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}

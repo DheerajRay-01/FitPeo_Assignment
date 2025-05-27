@@ -18,7 +18,7 @@ function Header() {
               </div>
             </div>
           {/* Logo */}
-          <div className="text-2xl font-bold text-blue-600  px-20">HealthCare</div>
+          <div className="text-3xl sm:text-2xl font-bold text-blue-600  m-auto sm:px-15">HealthCare</div>
 
           {/* Notification + Profile */}
           <div className="flex items-center gap-4">
